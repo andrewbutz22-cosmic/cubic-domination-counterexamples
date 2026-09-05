@@ -1,0 +1,40 @@
+== controls ==
+Petersen n=10 deg=[3] conn=True  gamma: CBC=3 (feasible at 2: Infeasible) HiGHS=3 B&B=3 (nodes 13) SAT<=g-1:UNSAT SAT<=g:SAT
+         times: cbc=0.07s cbc-feas=0.00s highs=0.52s bb=0.00s sat=0.02s
+K4       n=4 deg=[3] conn=True  gamma: CBC=1 (feasible at 0: Infeasible) HiGHS=1 B&B=1 (nodes 5) SAT<=g-1:UNSAT SAT<=g:SAT
+         times: cbc=0.00s cbc-feas=0.00s highs=0.00s bb=0.00s sat=0.00s
+K3,3     n=6 deg=[3] conn=True  gamma: CBC=2 (feasible at 1: Infeasible) HiGHS=2 B&B=2 (nodes 9) SAT<=g-1:UNSAT SAT<=g:SAT
+         times: cbc=0.01s cbc-feas=0.00s highs=0.01s bb=0.00s sat=0.00s
+Q3       n=8 deg=[3] conn=True  gamma: CBC=2 (feasible at 1: Infeasible) HiGHS=2 B&B=2 (nodes 9) SAT<=g-1:UNSAT SAT<=g:SAT
+         times: cbc=0.00s cbc-feas=0.00s highs=0.01s bb=0.00s sat=0.00s
+
+== brute-force validation of the gamma engines (all 2^n subsets) ==
+   12 graphs (n<=20), 0 mismatches, 0.6s
+
+== random connected cubic agreement sweep (n=20..36) ==
+   30 graphs, 0 disagreements, 1.5s
+
+== JSON graphs ==
+R6+R6    n=50 deg=[3] conn=True  gamma: CBC=16 (feasible at 15: Infeasible) HiGHS=16 B&B=16 (nodes 222501) SAT<=g-1:UNSAT SAT<=g:SAT structural=16
+         times: cbc=0.84s cbc-feas=1.48s highs=0.42s bb=2.06s sat=0.72s structural=1.3s
+         witness: [12, 26, 28, 29, 32, 33, 34, 35, 37, 39, 42, 43, 44, 45, 47, 49]
+R6+R7    n=50 deg=[3] conn=True  gamma: CBC=16 (feasible at 15: Infeasible) HiGHS=16 B&B=16 (nodes 231037) SAT<=g-1:UNSAT SAT<=g:SAT structural=16
+         times: cbc=0.90s cbc-feas=1.50s highs=0.24s bb=2.12s sat=0.61s structural=1.5s
+         witness: [12, 21, 28, 29, 32, 33, 34, 35, 37, 39, 42, 43, 44, 45, 47, 49]
+R7+R7    n=50 deg=[3] conn=True  gamma: CBC=16 (feasible at 15: Infeasible) HiGHS=16 B&B=16 (nodes 241854) SAT<=g-1:UNSAT SAT<=g:SAT structural=16
+         times: cbc=0.83s cbc-feas=1.37s highs=0.21s bb=2.23s sat=0.84s structural=1.6s
+         witness: [7, 21, 28, 29, 32, 33, 34, 35, 37, 39, 42, 43, 44, 45, 47, 49]
+R3+R3    n=50 deg=[3] conn=True  gamma: CBC=14 (feasible at 13: Infeasible) HiGHS=14 B&B=14 (nodes 595) SAT<=g-1:UNSAT SAT<=g:SAT structural=14
+         times: cbc=0.03s cbc-feas=0.03s highs=0.09s bb=0.01s sat=0.47s structural=0.4s
+         witness: [12, 13, 26, 27, 28, 29, 32, 33, 36, 37, 42, 43, 46, 47]
+R3+R6    n=50 deg=[3] conn=True  gamma: CBC=15 (feasible at 14: Infeasible) HiGHS=15 B&B=15 (nodes 10147) SAT<=g-1:UNSAT SAT<=g:SAT structural=15
+         times: cbc=0.36s cbc-feas=0.36s highs=0.06s bb=0.12s sat=0.42s structural=0.5s
+         witness: [12, 13, 26, 28, 29, 32, 33, 36, 37, 42, 43, 44, 45, 47, 49]
+R3+R7    n=50 deg=[3] conn=True  gamma: CBC=15 (feasible at 14: Infeasible) HiGHS=15 B&B=15 (nodes 10791) SAT<=g-1:UNSAT SAT<=g:SAT structural=15
+         times: cbc=0.37s cbc-feas=0.45s highs=0.05s bb=0.11s sat=0.34s structural=0.5s
+         witness: [12, 13, 21, 28, 29, 32, 33, 36, 37, 42, 43, 44, 45, 47, 49]
+R0+R0    n=50 deg=[3] conn=True  gamma: CBC=14 (feasible at 13: Infeasible) HiGHS=14 B&B=14 (nodes 609) SAT<=g-1:UNSAT SAT<=g:SAT structural=14
+         times: cbc=0.02s cbc-feas=0.02s highs=0.08s bb=0.01s sat=0.15s structural=0.3s
+         witness: [10, 11, 24, 25, 28, 29, 32, 33, 36, 37, 42, 43, 46, 47]
+
+wrote results_gamma.json

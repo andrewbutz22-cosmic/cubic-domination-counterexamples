@@ -1,0 +1,78 @@
+== pasted graph6 string (from the task text) ==
+   length 204
+   DECODE ERROR: graph6 length mismatch: n=50 needs 1225 bits (205 chars after the size), string supplies 1218 bits (203 chars)
+   with the two '_' restored (positions 16, 55) == JSON R3+R3 graph6: True
+
+== controls ==
+Petersen n=10 m=15 deg=[3] conn=True
+    i: CBC=3 HiGHS=3 BB=3 (nodes 10) SAT<=i-1:UNSAT SAT<=i:SAT CBC-feas(i-1):Infeasible
+    mu*: ILP=3 BB(L(G))=3 (nodes 13)
+    times: i_cbc=0.04s i_highs=0.84s i_bb=0.00s i_sat=0.02s mu_ilp=0.01s mu_bb=0.00s
+K4       n=4 m=6 deg=[3] conn=True
+    i: CBC=1 HiGHS=1 BB=1 (nodes 5) SAT<=i-1:UNSAT SAT<=i:SAT CBC-feas(i-1):Infeasible
+    mu*: ILP=2 BB(L(G))=2 (nodes 7)
+    times: i_cbc=0.01s i_highs=0.00s i_bb=0.00s i_sat=0.00s mu_ilp=0.01s mu_bb=0.00s
+K3,3     n=6 m=9 deg=[3] conn=True
+    i: CBC=3 HiGHS=3 BB=3 (nodes 7) SAT<=i-1:UNSAT SAT<=i:SAT CBC-feas(i-1):Infeasible
+    mu*: ILP=3 BB(L(G))=3 (nodes 10)
+    times: i_cbc=0.01s i_highs=0.00s i_bb=0.00s i_sat=0.00s mu_ilp=0.01s mu_bb=0.00s
+Q3       n=8 m=12 deg=[3] conn=True
+    i: CBC=2 HiGHS=2 BB=2 (nodes 7) SAT<=i-1:UNSAT SAT<=i:SAT CBC-feas(i-1):Infeasible
+    mu*: ILP=3 BB(L(G))=3 (nodes 11)
+    times: i_cbc=0.01s i_highs=0.01s i_bb=0.00s i_sat=0.00s mu_ilp=0.01s mu_bb=0.00s
+
+== JSON graphs ==
+R0+R0    n=50 m=75 deg=[3] conn=True
+    pivot maximal=True (|M|=15)
+    i: CBC=15 HiGHS=15 BB=15 (nodes 4606) SAT<=i-1:UNSAT SAT<=i:SAT CBC-feas(i-1):Infeasible
+    mu*: ILP=15 BB(L(G))=15 (nodes 198)
+    K: 15 vars/20 clauses, lit-occ=[2], SAT=False, G==construction:True
+    times: i_cbc=0.44s i_highs=0.22s i_bb=0.03s i_sat=0.40s mu_ilp=0.01s mu_bb=0.00s
+    simple=True g6==edges:False edges->g6==g6:False pivot==[(0,1)..(28,29)]:True json ids valid=True (size 15) claimed i=15 mu=15
+R3+R3    n=50 m=75 deg=[3] conn=True
+    pivot maximal=True (|M|=15)
+    i: CBC=16 HiGHS=16 BB=16 (nodes 61034) SAT<=i-1:UNSAT SAT<=i:SAT CBC-feas(i-1):Infeasible
+    mu*: ILP=15 BB(L(G))=15 (nodes 171)
+    K: 15 vars/20 clauses, lit-occ=[2], SAT=False, G==construction:True
+    times: i_cbc=0.57s i_highs=0.28s i_bb=0.28s i_sat=0.53s mu_ilp=0.01s mu_bb=0.00s
+    simple=True g6==edges:True edges->g6==g6:True pivot==[(0,1)..(28,29)]:True json ids valid=True (size 16) claimed i=16 mu=15
+R3+R6    n=50 m=75 deg=[3] conn=True
+    pivot maximal=True (|M|=15)
+    i: CBC=16 HiGHS=16 BB=16 (nodes 65850) SAT<=i-1:UNSAT SAT<=i:SAT CBC-feas(i-1):Infeasible
+    mu*: ILP=15 BB(L(G))=15 (nodes 257)
+    K: 15 vars/20 clauses, lit-occ=[2], SAT=False, G==construction:True
+    times: i_cbc=0.93s i_highs=0.35s i_bb=0.29s i_sat=0.61s mu_ilp=0.01s mu_bb=0.00s
+    simple=True g6==edges:True edges->g6==g6:True pivot==[(0,1)..(28,29)]:True json ids valid=True (size 16) claimed i=16 mu=15
+R3+R7    n=50 m=75 deg=[3] conn=True
+    pivot maximal=True (|M|=15)
+    i: CBC=16 HiGHS=16 BB=16 (nodes 72075) SAT<=i-1:UNSAT SAT<=i:SAT CBC-feas(i-1):Infeasible
+    mu*: ILP=15 BB(L(G))=15 (nodes 247)
+    K: 15 vars/20 clauses, lit-occ=[2], SAT=False, G==construction:True
+    times: i_cbc=0.70s i_highs=0.29s i_bb=0.31s i_sat=0.79s mu_ilp=0.01s mu_bb=0.00s
+    simple=True g6==edges:True edges->g6==g6:True pivot==[(0,1)..(28,29)]:True json ids valid=True (size 16) claimed i=16 mu=15
+R6+R6    n=50 m=75 deg=[3] conn=True
+    pivot maximal=True (|M|=15)
+    i: CBC=16 HiGHS=16 BB=16 (nodes 76034) SAT<=i-1:UNSAT SAT<=i:SAT CBC-feas(i-1):Infeasible
+    mu*: ILP=15 BB(L(G))=15 (nodes 453)
+    K: 15 vars/20 clauses, lit-occ=[2], SAT=False, G==construction:True
+    times: i_cbc=1.04s i_highs=0.47s i_bb=0.32s i_sat=0.88s mu_ilp=0.01s mu_bb=0.01s
+    simple=True g6==edges:True edges->g6==g6:True pivot==[(0,1)..(28,29)]:True json ids valid=True (size 16) claimed i=16 mu=15
+R6+R7    n=50 m=75 deg=[3] conn=True
+    pivot maximal=True (|M|=15)
+    i: CBC=16 HiGHS=16 BB=16 (nodes 83877) SAT<=i-1:UNSAT SAT<=i:SAT CBC-feas(i-1):Infeasible
+    mu*: ILP=15 BB(L(G))=15 (nodes 443)
+    K: 15 vars/20 clauses, lit-occ=[2], SAT=False, G==construction:True
+    times: i_cbc=0.98s i_highs=0.33s i_bb=0.34s i_sat=0.73s mu_ilp=0.02s mu_bb=0.01s
+    simple=True g6==edges:True edges->g6==g6:True pivot==[(0,1)..(28,29)]:True json ids valid=True (size 16) claimed i=16 mu=15
+R7+R7    n=50 m=75 deg=[3] conn=True
+    pivot maximal=True (|M|=15)
+    i: CBC=16 HiGHS=16 BB=16 (nodes 86520) SAT<=i-1:UNSAT SAT<=i:SAT CBC-feas(i-1):Infeasible
+    mu*: ILP=15 BB(L(G))=15 (nodes 314)
+    K: 15 vars/20 clauses, lit-occ=[2], SAT=False, G==construction:True
+    times: i_cbc=1.02s i_highs=0.28s i_bb=0.35s i_sat=0.66s mu_ilp=0.01s mu_bb=0.00s
+    simple=True g6==edges:True edges->g6==g6:True pivot==[(0,1)..(28,29)]:True json ids valid=True (size 16) claimed i=16 mu=15
+
+== random cubic agreement sweep ==
+   30 random connected cubic graphs (n in 20..36): 30 full agreements, 0 disagreements
+
+wrote results.json
